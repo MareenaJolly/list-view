@@ -1,0 +1,55 @@
+/* Container for the whole list view */
+.list-view-container {
+    padding: 20px;
+  }
+  
+  /* Grid layout for the list of posts */
+  .posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates responsive grid columns */
+    gap: 20px; /* Space between grid items */
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Individual post card styling */
+  .post-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect for each card */
+  .post-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  /* Title styling */
+  .post-card h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Description text styling */
+  .post-card p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styling for "View More" */
+  .view-more-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
